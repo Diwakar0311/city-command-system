@@ -21,8 +21,12 @@ The goal of this project is to create a working system that can be used as a fou
 * Time-based logic for traffic signal system
 
 ### How it works
-####A video is loaded into the system
+A video is loaded into the system
+
 2 YOLO model detects vehicles in each frame
+
 3 Each vehicle is assigned a tracking ID
+
 4 A virtual traffic signal runs on a timer
+
 5 If a vehicle crosses the stop line during RED signal:
