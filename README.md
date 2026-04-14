@@ -12,3 +12,17 @@ The goal of this project is to create a working system that can be used as a fou
 * Saves evidence images of violations
 * Shows total violation count
 * Provides a Streamlit dashboard for live video processing
+
+### Technologies Used
+* Python
+* OpenCV (Computer Vision)
+* YOLOv8 (Ultralytics AI model)
+* Streamlit (for dashboard UI)
+* Time-based logic for traffic signal system
+
+### How it works
+1 A video is loaded into the system
+2 YOLO model detects vehicles in each frame
+3 Each vehicle is assigned a tracking ID
+4 A virtual traffic signal runs on a timer
+5 If a vehicle crosses the stop line during RED signal:
