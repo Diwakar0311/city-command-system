@@ -21,7 +21,7 @@ The goal of this project is to create a working system that can be used as a fou
 * Time-based logic for traffic signal system
 
 ### How it works
-A video is loaded into the system
+1 A video is loaded into the system
 
 2 YOLO model detects vehicles in each frame
 
@@ -30,3 +30,28 @@ A video is loaded into the system
 4 A virtual traffic signal runs on a timer
 
 5 If a vehicle crosses the stop line during RED signal:
+* It is marked as a violation
+* An image is saved as proof
+* Violation counter increases
+
+### Project Structure
+* app.py → main AI detection system
+* dashboard.py → Streamlit UI dashboard
+* traffic.mp4 → input video file
+* violations/ → saved violation images
+
+### How to Run
+
+* pip install ultralytics opencv-python streamlit
+
+* python app.py
+
+* streamlit run dashboard.py
+
+### Output
+* Real-time vehicle detection
+* Traffic signal display
+* Bounding boxes (green/red)
+* Violation detection system
+* Live violation counter
+* Saved evidence images
